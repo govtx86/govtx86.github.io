@@ -4,13 +4,13 @@ body {
     flex-flow: column;
     height: 100dvh;
     justify-content: space-between;
-    background-image: linear-gradient(to top left, #2b4d58, #39998e);
-    background-color: #2b4d58;
-    background-attachment: fixed;
-    color: white;
+    background-image: linear-gradient(to bottom, black, grey);
+    background-color: grey;
+    color: black;
 }
 
 #mainBody {
     flex-grow: 1;
     padding: 10px;
+    background-color: white;
 }
