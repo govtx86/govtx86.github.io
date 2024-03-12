@@ -5,5 +5,22 @@ import Breadcrumbs from "../components/Breadcrumbs.astro"
 
 <BaseLayout title="Contact me">
     <Breadcrumbs/>
-    Contact page
+    <p>Contact me to enquire about any projects or freelance work</p>
+    <div id="contactlist">
+        <p>Write me an email : <a href="mailto:govindsanal08@gmail.com">govindsanal08@gmail.com</a></p>
+        <p>Contact me through Instagram : <a href="https://www.instagram.com/_govt._/">@_govt._</a></p>
+    </div>
 </BaseLayout>
+
+<style>
+    p {
+        font-size: 20px;
+    }
+    #contactlist p {
+        text-align: center;
+    }
+    #contactlist a {
+        text-decoration: none;
+        color: #39998A;
+    }
+</style>
