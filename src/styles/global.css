@@ -4,9 +4,9 @@ body {
     flex-flow: column;
     height: 100dvh;
     justify-content: space-between;
-    background-image: linear-gradient(to bottom, black, grey);
     background-color: grey;
     color: black;
+    font-family: 'Roboto Slab';
 }
 
 #mainBody {

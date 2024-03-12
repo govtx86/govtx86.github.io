@@ -3,7 +3,13 @@
 ---
 
 <div id="header">
-    <a href="/"><h1>Govind</h1></a>
+    <div id="left">
+        <a href="/">Govind</a>
+    </div>
+    <div id="right">
+        <a href="/contact">Contact</a>
+        <a href="/projects">Projects</a>
+    </div>
 </div>
 
 <style>
@@ -11,13 +17,35 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 15px;
-        padding-right: 15px;
         background-color: black;
         border-bottom: #ffdc7c 3px solid;
+        padding: 15px;
     }
     a {
         text-decoration: none;
         color: white;
     }
+    a:hover {
+        color: #c7c7c7;
+    }
+    #left {
+        font-size: 40px;
+    }
+    #right {
+        display: flex;
+        justify-content: space-between;
+        width: 320px;
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 500px) {
+        #left {
+            font-size: 30px;
+        }
+        #right {
+            font-size: 25px;
+            width: 195px;
+        }
+    }
+    
 </style>
