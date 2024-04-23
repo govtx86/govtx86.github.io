@@ -1,0 +1,38 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+const { title, date } = Astro.props;
+---
+
+<style>
+    #hr {
+        color: #ffdc7c;
+        width: 65%;
+    }
+    #datep {
+        padding-left: 5%;
+    }
+    #mainp {
+        padding: 10%;
+        padding-top: 0px;
+    }
+    @media screen and (max-width: 500px) {
+        #hr {
+            width: 75%;
+        }
+        #datep {
+            padding-left: 2%;
+        }
+        #mainp {
+            padding: 5%;
+            padding-top: 0px;
+        }
+    }
+</style>
+<BaseLayout title={title}>
+    <Breadcrumbs />
+    <h1 style="text-align: center;">{title}</h1>
+    <hr id="hr" />
+    <p id="datep"><em>{date}</em></p>
+    <div id="mainp"><slot /></div>
+</BaseLayout>

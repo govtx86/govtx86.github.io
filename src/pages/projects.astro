@@ -3,8 +3,14 @@ import BaseLayout from "../layouts/BaseLayout.astro"
 import Breadcrumbs from "../components/Breadcrumbs.astro"
 ---
 
+<style>
+    .postlist p {
+        color: white;
+    }
+</style>
 <BaseLayout title="My Projects">
     <Breadcrumbs/>
     <p>All the projects I have done so far!</p>
-    <ul></ul>
+    <ul class="postlist">
+    </ul>
 </BaseLayout>
